@@ -21,7 +21,7 @@ router.post('/s-analyzer', async function(req, res, next) {
     .find(([lang]) => ['english', 'spanish'].includes(lang));
 
   const hasBadWords = languageDetected && languageDetected[0] === 'spanish'
-    ? await spanishAnalysis(review)
+    ? await englishAnalysis(review)
     : await englishAnalysis(review);
 
   console.log('bad words: ', hasBadWords);
