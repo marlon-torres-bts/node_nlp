@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 console.log('Se me volvio a chispotear:', USER_PASS);
+console.log('Contraseña para el correo', 'correomio123');
 
 app.use('/', indexRouter);
 app.use('/api/nlp', nlpRouter);
