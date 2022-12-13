@@ -1,0 +1,23 @@
+{
+  "name": "node-nlp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "apos-to-lex-form": "^1.0.5",
+    "cookie-parser": "~1.4.4",
+    "csv-reader": "^1.0.9",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "languagedetect": "^2.0.0",
+    "morgan": "~1.9.1",
+    "natural": "^5.2.3",
+    "node-sentiment": "^0.0.8",
+    "nodemon": "^2.0.19",
+    "spelling-corrector": "^3.0.0",
+    "stopword": "^2.0.4"
+  }
+}
